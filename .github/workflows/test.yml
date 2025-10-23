@@ -24,6 +24,10 @@ jobs:
     steps:
       - name: Verify user
         run: whoami
+
+      - run: |
+          mkdir -p /usr/share/dotnet
+          ls -la /usr/share/dotnet
         
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
