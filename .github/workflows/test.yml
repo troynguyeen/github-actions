@@ -38,7 +38,7 @@ jobs:
 
       # Test Manual Approval
       - name: Manual Approval
-        uses: ./.github/actions/manual-approval
+        uses: trstringer/manual-approval@v1
         with:
           secret: ${{ secrets.GITHUB_TOKEN }}
           approvers: troynguyeen
